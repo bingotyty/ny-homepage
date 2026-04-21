@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ニューヨーク合同会社 | NEW YORK LLC — AI Ad Compliance Platform</title>
+    <meta
+      name="description"
+      content="AIによるオンライン広告コンプライアンス監視・検閲ソリューション。薬機法・景表法・特商法への適合性をリアルタイム自動判定。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&family=Zen+Maru+Gothic:wght@500;700;900&family=Fredoka:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Page Loader -->
+    <div class="loader" id="loader">
+      <div class="loader-inner">
+        <div class="loader-logo">
+          <span class="loader-ny">NY</span>
+          <span class="loader-bar"></span>
+        </div>
+        <div class="loader-text">LOADING<span class="loader-dots">...</span></div>
+      </div>
+    </div>
+
+    <!-- Cursor Glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Gradient Background Orbs -->
+    <div class="bg-orbs">
+      <div class="orb orb-cyan"></div>
+      <div class="orb orb-magenta"></div>
+      <div class="orb orb-violet"></div>
+    </div>
+    <div class="grid-bg"></div>
+
+    <!-- Floating Kawaii Stickers -->
+    <div class="stickers" aria-hidden="true">
+      <span class="sticker s-1">✦</span>
+      <span class="sticker s-2">♡</span>
+      <span class="sticker s-3">✿</span>
+      <span class="sticker s-4">✧</span>
+      <span class="sticker s-5">★</span>
+      <span class="sticker s-6">♡</span>
+      <span class="sticker s-7">✦</span>
+      <span class="sticker s-8">✿</span>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+      <div class="nav-inner">
+        <a href="#top" class="nav-logo">
+          <span class="logo-mark">
+            <span class="logo-n">N</span>
+            <span class="logo-y">Y</span>
+          </span>
+          <span class="logo-text">
+            <span class="logo-jp">ニューヨーク</span>
+            <span class="logo-en">NEW YORK LLC</span>
+          </span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#technology">Technology</a></li>
+          <li><a href="#market">Market</a></li>
+          <li><a href="#vision">Vision</a></li>
+        </ul>
+        <a href="#contact" class="nav-cta">
+          <span>Contact</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M5 12h14m-7-7 7 7-7 7"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="top">
+      <div class="hero-badge" data-reveal>
+        <span class="badge-emoji">✨</span>
+        <span>Ginza, Tokyo · Since 2020</span>
+        <span class="badge-emoji">✨</span>
+      </div>
+
+      <h1 class="hero-title">
+        <span class="hero-line" data-reveal-stagger>
+          <span class="word glitch" data-text="AI">AI</span>
+          <span class="word gradient glitch" data-text="Compliance">Compliance</span>
+        </span>
+        <span class="hero-line" data-reveal-stagger>
+          <span class="word">for</span>
+          <span class="word">Digital</span>
+          <span class="word gradient-alt glitch" data-text="Advertising.">Advertising.</span>
+        </span>
+      </h1>
+
+      <p class="hero-sub" data-reveal>
+        独自開発のAIが、オンライン広告を24時間リアルタイムで監視 💫<br />
+        薬機法・景品表示法・特定商取引法への適合性を、<strong>瞬時に、正確に</strong>判定します。
+      </p>
+
+      <div class="hero-actions" data-reveal>
+        <a href="#service" class="btn btn-primary">
+          <span>サービスを見る</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M5 12h14m-7-7 7 7-7 7"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+        <a href="#contact" class="btn btn-ghost">
+          <span>お問い合わせ</span>
+        </a>
+      </div>
+
+      <div class="hero-metrics" data-reveal>
+        <div class="metric">
+          <div class="metric-value" data-counter="24">0</div>
+          <div class="metric-label">24時間自動監視</div>
+        </div>
+        <div class="metric-divider"></div>
+        <div class="metric">
+          <div class="metric-value">
+            <span data-counter="99.9">0</span><span class="unit">%</span>
+          </div>
+          <div class="metric-label">判定一貫性</div>
+        </div>
+        <div class="metric-divider"></div>
+        <div class="metric">
+          <div class="metric-value">
+            <span data-counter="2020">0</span>
+          </div>
+          <div class="metric-label">創業年</div>
+        </div>
+      </div>
+
+      <div class="hero-scroll">
+        <span>SCROLL</span>
+        <div class="scroll-line"></div>
+      </div>
+
+      <!-- Floating Visual -->
+      <div class="hero-visual" aria-hidden="true">
+        <div class="visual-card card-1">
+          <div class="vc-header">
+            <span class="vc-dot dot-c"></span>
+            <span class="vc-label">AD SCAN · 薬機法</span>
+          </div>
+          <div class="vc-body">
+            <div class="vc-bar" style="--w: 88%"><span>OK</span></div>
+            <div class="vc-bar vc-bar-warn" style="--w: 42%"><span>REVIEW</span></div>
+          </div>
+        </div>
+        <div class="visual-card card-2">
+          <div class="vc-header">
+            <span class="vc-dot dot-m"></span>
+            <span class="vc-label">Realtime</span>
+          </div>
+          <div class="vc-chart">
+            <svg viewBox="0 0 160 60" preserveAspectRatio="none">
+              <path
+                d="M0,45 L20,38 L40,42 L60,22 L80,28 L100,12 L120,18 L140,8 L160,15"
+                stroke="url(#gChart)"
+                stroke-width="2"
+                fill="none"
+              />
+              <defs>
+                <linearGradient id="gChart" x1="0" x2="1">
+                  <stop offset="0%" stop-color="#25F4EE" />
+                  <stop offset="100%" stop-color="#FE2C55" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+        </div>
+        <div class="visual-card card-3">
+          <div class="vc-mini">
+            <div class="mini-num">AI</div>
+            <div class="mini-label">ENGINE<br />v.next</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section section-about" id="about">
+      <div class="section-head" data-reveal>
+        <span class="section-kicker">01 — About</span>
+        <h2 class="section-title">
+          銀座に本社を構える<br />
+          <span class="gradient">AIテクノロジー企業</span> <span class="title-emoji">🌸</span>
+        </h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card about-profile" data-reveal>
+          <div class="profile-head">
+            <span class="profile-flag">JP</span>
+            <span class="profile-since">EST. 2020</span>
+          </div>
+          <h3 class="profile-name">
+            <span class="jp">ニューヨーク</span>
+            <span class="jp">合同会社</span>
+          </h3>
+          <p class="profile-en">NEW YORK LLC</p>
+          <div class="profile-tags">
+            <span>B2B SaaS</span>
+            <span>AI / Machine Learning</span>
+            <span>AdTech</span>
+            <span>Compliance</span>
+          </div>
+        </div>
+
+        <dl class="about-facts" data-reveal>
+          <div class="fact">
+            <dt>商号</dt>
+            <dd>ニューヨーク合同会社</dd>
+          </div>
+          <div class="fact">
+            <dt>所在地</dt>
+            <dd>東京都中央区銀座1-22-11<br />銀座大竹ビジデンス 2F</dd>
+          </div>
+          <div class="fact">
+            <dt>設立年月</dt>
+            <dd>2020年6月</dd>
+          </div>
+          <div class="fact">
+            <dt>資本金</dt>
+            <dd>300,000円</dd>
+          </div>
+          <div class="fact">
+            <dt>代表者</dt>
+            <dd>夏 智子</dd>
+          </div>
+          <div class="fact">
+            <dt>主要取引銀行</dt>
+            <dd>三井住友銀行<br />GMOあおぞらネット銀行</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Service Section -->
+    <section class="section section-service" id="service">
+      <div class="section-head" data-reveal>
+        <span class="section-kicker">02 — Service</span>
+        <h2 class="section-title">
+          広告の<span class="gradient-alt">法令遵守</span>を、<br />
+          AIで自動化する。 <span class="title-emoji">✨</span>
+        </h2>
+        <p class="section-lead">
+          Web上に配信される膨大なデジタル広告クリエイティブに対し、<br />
+          <strong>薬機法・景品表示法・特定商取引法</strong>をはじめとする各種関連法令への<br />
+          抵触有無、および広告媒体各社の掲載基準への適合性をリアルタイムで自動判定します。
+        </p>
+      </div>
+
+      <div class="service-flow" data-reveal>
+        <div class="flow-step">
+          <span class="flow-num">01</span>
+          <h4>INPUT</h4>
+          <p>画像・動画・テキストの広告クリエイティブを受信</p>
+        </div>
+        <svg class="flow-arrow" viewBox="0 0 40 12" aria-hidden="true">
+          <path d="M0,6 L34,6 M28,1 L38,6 L28,11" stroke="currentColor" stroke-width="1.5" fill="none" />
+        </svg>
+        <div class="flow-step">
+          <span class="flow-num">02</span>
+          <h4>AI ANALYSIS</h4>
+          <p>独自AIエンジンが違反表現・誇大広告・不当表示を自動検出</p>
+        </div>
+        <svg class="flow-arrow" viewBox="0 0 40 12" aria-hidden="true">
+          <path d="M0,6 L34,6 M28,1 L38,6 L28,11" stroke="currentColor" stroke-width="1.5" fill="none" />
+        </svg>
+        <div class="flow-step">
+          <span class="flow-num">03</span>
+          <h4>JUDGE</h4>
+          <p>法令・媒体掲載基準への適合性をリアルタイム判定</p>
+        </div>
+        <svg class="flow-arrow" viewBox="0 0 40 12" aria-hidden="true">
+          <path d="M0,6 L34,6 M28,1 L38,6 L28,11" stroke="currentColor" stroke-width="1.5" fill="none" />
+        </svg>
+        <div class="flow-step flow-result">
+          <span class="flow-num">04</span>
+          <h4>REPORT</h4>
+          <p>リスク要素を可視化し、広告主・代理店に即時フィードバック</p>
+        </div>
+      </div>
+
+      <div class="service-audiences" data-reveal>
+        <div class="audience">
+          <h5>For 広告主 / 代理店</h5>
+          <p>法令遵守体制の構築と、ブランドセーフティの確保。</p>
+        </div>
+        <div class="audience">
+          <h5>For 広告媒体</h5>
+          <p>健全な広告環境の維持と、掲載基準の自動適用。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section class="section section-tech" id="technology">
+      <div class="section-head" data-reveal>
+        <span class="section-kicker">03 — Technology</span>
+        <h2 class="section-title">
+          中核資産は、<br />
+          <span class="gradient">独自AIエンジン</span> <span class="title-emoji">💫</span>
+        </h2>
+        <p class="section-lead">
+          画像・動画・テキストを横断的に解析し、違反表現を自動検出。<br />
+          長年にわたる学習データの蓄積とチューニングノウハウが、<br />
+          競合他社に対する参入障壁として機能しています。
+        </p>
+      </div>
+
+      <div class="tech-grid">
+        <div class="tech-card" data-reveal data-tilt>
+          <div class="tech-icon">
+            <svg viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.5" />
+              <path d="M12 20 L18 26 L28 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </div>
+          <h4>処理スピード</h4>
+          <p>大量の広告を<strong>24時間体制</strong>で自動処理。人手に依存しない無停止オペレーション。</p>
+          <div class="tech-number">24/7</div>
+        </div>
+
+        <div class="tech-card" data-reveal data-tilt>
+          <div class="tech-icon">
+            <svg viewBox="0 0 40 40" fill="none">
+              <rect x="6" y="6" width="28" height="28" rx="4" stroke="currentColor" stroke-width="1.5" />
+              <path d="M13 20 L20 13 L27 20 L20 27 Z" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </div>
+          <h4>判定の一貫性</h4>
+          <p>人的判断のばらつきを排除し、<strong>均質な審査品質</strong>を実現します。</p>
+          <div class="tech-number">±0</div>
+        </div>
+
+        <div class="tech-card" data-reveal data-tilt>
+          <div class="tech-icon">
+            <svg viewBox="0 0 40 40" fill="none">
+              <path d="M8 30 L14 20 L22 24 L32 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M25 8 L32 8 L32 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <h4>運用コスト</h4>
+          <p>人手審査比で<strong>大幅なコスト低減</strong>。スケールしても限界費用はほぼゼロ。</p>
+          <div class="tech-number">-90%</div>
+        </div>
+
+        <div class="tech-card" data-reveal data-tilt>
+          <div class="tech-icon">
+            <svg viewBox="0 0 40 40" fill="none">
+              <path d="M20 6 V34 M6 20 H34" stroke="currentColor" stroke-width="1.5" />
+              <circle cx="20" cy="20" r="10" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </div>
+          <h4>継続的進化</h4>
+          <p>法令改正・媒体ポリシー変更に対し、<strong>機械学習により自動適応</strong>します。</p>
+          <div class="tech-number">∞</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Market Section -->
+    <section class="section section-market" id="market">
+      <div class="section-head" data-reveal>
+        <span class="section-kicker">04 — Market</span>
+        <h2 class="section-title">
+          構造的な<span class="gradient-alt">追い風</span>の中で、<br />
+          揺るがない成長を。 <span class="title-emoji">🌟</span>
+        </h2>
+      </div>
+
+      <div class="market-grid">
+        <div class="market-main" data-reveal>
+          <p>
+            国内外のデジタル広告市場は一貫して拡大を続け、広告費全体に占めるインターネット広告の比率は年々上昇。
+            同時に、違法広告・不当表示に対する<strong>行政処分や広告アカウント停止措置は年々厳格化</strong>しています。
+          </p>
+          <p>
+            広告主・広告代理店にとって「ブランドセーフティ」と「コンプライアンス対応」は事業継続上の必須課題。<br />
+            当社サービスは、この<strong>構造的かつ不可逆的な市場ニーズ</strong>に応えるものです。
+          </p>
+          <p class="market-emphasis">
+            景気変動の影響を受けにくい、<span class="gradient">安定的かつ継続的な需要</span>。
+          </p>
+        </div>
+
+        <div class="market-stats">
+          <div class="stat-card" data-reveal>
+            <div class="stat-top">
+              <span class="stat-label">Revenue Model</span>
+              <span class="stat-tag">STABLE</span>
+            </div>
+            <div class="stat-value">Subscription</div>
+            <p>継続契約型によるリカーリング・レベニュー。売上変動リスクを抑制し、健全なキャッシュフローを維持。</p>
+          </div>
+          <div class="stat-card" data-reveal>
+            <div class="stat-top">
+              <span class="stat-label">Market Trend</span>
+              <span class="stat-tag tag-up">GROWTH</span>
+            </div>
+            <div class="stat-value">Recession-resistant</div>
+            <p>規制強化と市場拡大の双方が追い風。景気変動に左右されない安定需要。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section class="section section-vision" id="vision">
+      <div class="section-head" data-reveal>
+        <span class="section-kicker">05 — Vision</span>
+        <h2 class="section-title">
+          これからの<span class="gradient">ニューヨーク合同会社</span> <span class="title-emoji">🎀</span>
+        </h2>
+      </div>
+
+      <div class="vision-list">
+        <div class="vision-item" data-reveal>
+          <span class="vision-index">i.</span>
+          <div class="vision-body">
+            <h4>対応範囲の拡大</h4>
+            <p>対応媒体・対応言語・対応法域を拡充し、サービス提供範囲を世界へ。</p>
+          </div>
+        </div>
+        <div class="vision-item" data-reveal>
+          <span class="vision-index">ii.</span>
+          <div class="vision-body">
+            <h4>AIエンジンの進化</h4>
+            <p>継続的な研究開発により、技術的優位性を維持・強化。</p>
+          </div>
+        </div>
+        <div class="vision-item" data-reveal>
+          <span class="vision-index">iii.</span>
+          <div class="vision-body">
+            <h4>プラットフォーム連携</h4>
+            <p>主要広告プラットフォーム事業者との連携深化により収益基盤を拡大。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="vision-quote" data-reveal>
+        <p>
+          代表自らが全ての案件を直接請け負う<strong>専任体制</strong>。<br />
+          画一的なサービスでは困難な、<strong>迅速かつ高精度な技術サポート</strong>を。
+        </p>
+        <span class="quote-sig">— 代表 夏 智子</span>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section-contact" id="contact">
+      <div class="contact-inner" data-reveal>
+        <span class="section-kicker">06 — Contact</span>
+        <h2 class="contact-title">
+          お気軽に、<br />
+          <span class="gradient">ご相談ください</span> <span class="title-emoji">💌</span>
+        </h2>
+        <p class="contact-sub">
+          広告コンプライアンスに関するお問い合わせ、<br />
+          サービス導入のご相談を承っております。
+        </p>
+
+        <div class="contact-cards">
+          <div class="contact-card">
+            <span class="cc-label">Office</span>
+            <p>東京都中央区銀座1-22-11<br />銀座大竹ビジデンス 2F</p>
+          </div>
+          <div class="contact-card">
+            <span class="cc-label">Founded</span>
+            <p>2020年6月<br />代表 夏 智子</p>
+          </div>
+          <div class="contact-card">
+            <span class="cc-label">Banks</span>
+            <p>三井住友銀行<br />GMOあおぞらネット銀行</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-n">N</span><span class="logo-y">Y</span>
+          </div>
+          <div>
+            <div class="footer-name">ニューヨーク合同会社</div>
+            <div class="footer-en">NEW YORK LLC · Ginza, Tokyo</div>
+          </div>
+        </div>
+        <div class="footer-meta">
+          <span>© 2026 NEW YORK LLC</span>
+          <span class="dot">·</span>
+          <span>All Rights Reserved.</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

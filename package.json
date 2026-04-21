@@ -1,0 +1,14 @@
+{
+  "name": "ny-homepage",
+  "version": "1.0.0",
+  "description": "New York LLC 公司主页 — TikTok 风格深色 + 日式爽やかすっきり氛围",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0"
+  },
+  "license": "UNLICENSED"
+}
